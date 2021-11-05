@@ -1,0 +1,25 @@
+AWS FREE TIER featured services 
+___________________
+1. EC2 750 hours per month - Linux, RHEL, or SLES, Windows
+2. Amazon S3 - 5GB (20k get, 2r put Request)
+3. Amazon RDS - MySQL, PostgresSQL, MariaDB, Oracle BYOL, SQL Server (750h, 20GB storage)
+4. AWS Iot 250 000 messeages
+5. Amazon EC2 Container Registry 500MB-month
+
+
+IAM  Identity and Access Management
+____________________
+AWS Identity and Access Management (IAM) provides fine-grained access control across all of AWS. 
+With IAM, you can specify who can access which services and resources, and under which conditions.
+With IAM policies, you manage permissions to your workforce and systems to ensure least-privilege permissions.
+
+Best practices
+1. Delete your root access keys
+2. Activate MFA
+3. Create individual IAM users
+4. User groups to assign permissions
+5. Apply an IAM password policy
+
+IAM -  управління користувачами, групами та ролями.
+
+
