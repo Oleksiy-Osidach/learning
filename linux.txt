@@ -10,5 +10,9 @@ mkdir [options] directory	Create a new directory.
 ssh [options] user@machine	Remotely log in to another Linux machine, over the network.
 Leave an ssh session by typing exit.
 ll
-
 _______________________________________________________
+
+touch - create empty file, update date of last edit file
+touch file.name
+
+history
