@@ -1,0 +1,11 @@
+git clone https://github.com/Oleksiy-Osidach/learning.git - clone repository
+
+git status -  	check the changes
+git add file.name - add a change in the working directory
+git commit - add ne commit
+git commit -m "coment" - add ne commit whith descriptions
+git push - upload local repository content to a remote repository
+git pull - download whith remote repos. to a local
+git rm name.file - remote file
+git log - shows logs
+
