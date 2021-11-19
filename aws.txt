@@ -30,4 +30,82 @@ IAM make three sections
 
 
 
+VPC  Virtual Private Cloud
+____________________________
+ (Amazon VPC) enables you to launch AWS resources into a virtual network
+ 
+ AWS internet gateway  communication between your VPC and the internet
+
+ AWS route table - are used to determine where network traffic from your subnet or gateway is directed
+
+ AWS NACL - Network Access Control List, helps provide a layer of security to the AWS.
+
+ AWS subnet - helps create subnet in your VPS.
+
+AWS availability zones - one or more data centers whit redundant power and internet, conect in one AWS Region
+
+AWS region - this physical location i world data centers, where each A-Z.
+
+
+
+Amazon Simple Storage Service (Amazon S3)
+____________________________________________
+
+Save any data at any time, from anywhere
+When create a bucket - select region. 
+Best practics - select region closest to you or if you need your clients
+
+Bucket - root level "Folders", any "subfolders" - folder.
+File in folder - object
+
+Free Tier - 5Gb and 20k GET requests, 2k put rec.
+
+RULES Bucket names:
+ - must unique in ALL AWS
+ - 3-63 length
+ - only small letters, numbers and hyphens
+ - not be an IP address
+
+S3 storage Classes
+ - standart
+   - default class
+   - 99.99999999999 durability
+   - 99.99 availabity
+   - hight cost
+
+ - RRS reduced redundancy storage
+   - non-critical object
+   - 99.99 durability
+   - 99.99 availabity
+   - smales cost than in the standard
+
+ - S3-IA infirequent access 
+   - not frequency but must availabity
+   - 99.99999999999 durability
+   - 99.90 availabity
+   - smales cost than in the standard or RRS
+ 
+ - Glacier
+   - long-term archival storage
+   - 99.99999999999 durability
+   - may take several hours to be retrived
+   - very low cost
+ 
+
+Select storage class that dictate 
+ - storage cost
+ - avalibility
+ - durability
+ - frequency to access
+
+Lifecycle S3 Object
+This set of rules that automate the migration 
+object befor storage classes (or delete).
+
+S3 Versioning 
+that keeps trak of and stores all old/new versions of an object
+
+
+
+
 
