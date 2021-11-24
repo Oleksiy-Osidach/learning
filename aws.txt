@@ -77,13 +77,13 @@ S3 storage Classes
    - non-critical object
    - 99.99 durability
    - 99.99 availabity
-   - smales cost than in the standard
+   - smalest cost than in the standard
 
- - S3-IA infirequent access 
+ - S3-IA infrequent access 
    - not frequency but must availabity
    - 99.99999999999 durability
    - 99.90 availabity
-   - smales cost than in the standard or RRS
+   - smalest cost than in the standard or RRS
  
  - Glacier
    - long-term archival storage
@@ -96,14 +96,82 @@ Select storage class that dictate
  - storage cost
  - avalibility
  - durability
- - frequency to access
-
+    
 Lifecycle S3 Object
 This set of rules that automate the migration 
 object befor storage classes (or delete).
 
 S3 Versioning 
 that keeps trak of and stores all old/new versions of an object
+
+
+
+Amazon Elastic Compute Cloud (Amazon EC2)
+____________________________________________
+
+EC2 components:
+ - AMIs (Win or Linux)
+ - Instance Type (CPU)
+ - EBS (Hdd)
+ - Ip Addressing (Network Card)
+ - Secutity Groups (Firewall)
+ - RAM
+
+EC2 purchasing options
+ - On-Demand - any time
+ - Reserved - set time period (1-3 years)
+ - Spot - use if you bid = <
+
+AMI Amazon Machine Image
+(preconfigured package required to launch an EC2 instance)
+ - Community AMIs (Free)
+ - AWS marketplace AMIs (pay)
+ - My AMIs (create)
+
+Instance Types
+ - is the computer power og your instance
+
+ - Components
+   - Famile - memory, GPU, Computer, General, storage
+   - Type - subcategory fot family type-
+   - VCPUs - the number of virtual CPUs
+   - Memory - RAM
+   - Instance storage - hard drive
+   - EBS-Optomized Available - Amazon Elastic Block Store
+   - Network performance - speed 
+
+???? EBS Elastic Block Store
+ - is like a hard drive in the cloud that provides persistent block storage volumes for use with Amazon EC2 instances. EBS volumes are placed in an availability zone, where they are automatically replicated to protect data loss from the failure of a single component.
+
+ Security Groups
+  -SG - a virtual firewall that controls the traffic for one or more istance
+
+ 
+ Ip addressing
+    -2 ip, in (vpc) and out (internet)
+    
+    -EC2- Public IP - SG - NACL - Route Table - Internet Getway - internet
+
+ RDS and DynamoDB
+  RDS - Relational Database Service
+  is a SQL db service that provides a wide range of SQL db options to select from
+    Amazone Aurora, MySQL, Postgre SQL
+    MariaDB, Oracle, MS SQL Server
+  
+  DnamoDB is a noSQL db service.
+   only DynamoDB
+
+
+SNS Simple Notification Service
+   an AWS Service that allows you to automate the sending of email or text msg notofications, based on events that happen in your AWS acc.
+
+
+
+
+
+
+
+
 
 
 
