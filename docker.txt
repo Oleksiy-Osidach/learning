@@ -5,7 +5,7 @@ nginx - якщо немає локально то знайде на docker hub
 
 docker images - all install images
 
-docker rmi name(id)  - delete images
+docker rmi name(id)  - delete images (before stop container )
 
 docker rm name(id) - delete container
 
