@@ -1,0 +1,15 @@
+docker ps -a - all Process Status container
+
+docker run -d (-it) -p 1236:80 nginx - запустити контейнер -d в фоні, -it не в фоні, -p перенаправлення портів
+nginx - якщо немає локально то знайде на docker hub
+
+docker images - all install images
+
+docker rmi name(id)  - delete images
+
+docker rm name(id) - delete container
+
+docker build -t oless:v1 .  - create images крапка в кінці означає що імедж локальний oless:v1 - name and tag
+
+docker tag oless:v1 oless:copy - create copy whit another TAG 
+
