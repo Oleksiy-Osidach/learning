@@ -1,15 +1,30 @@
-docker ps -a - all Process Status container
+docker ps — look at the list of the started containers
+-q — only id
+-a — all containers
 
-docker run -d (-it) -p 1236:80 nginx - запустити контейнер -d в фоні, -it не в фоні, -p перенаправлення портів
-nginx - якщо немає локально то знайде на docker hub
+docker pull — download images (docker hub)
 
-docker images - all install images
+docker build — create images
+This command collects the Docker image from the dockerfile and build context. An assembly context is a set of files located in a specific path.
+-t  - option to specify the image name, for example, "docker build -t my." Collects an image from the current directory 
+(".") - the last parameter is the directory name, in our case the dot indicates that the directory is current.
 
-docker rmi name(id)  - delete images (before stop container )
+docker logs — see logs containers
+-follow - see log runing container, (docker logs -follow 315613.)
 
-docker rm name(id) - delete container
+docker run — run container
+docker run my -it bash - run container MY + bash
 
-docker build -t oless:v1 .  - create images крапка в кінці означає що імедж локальний oless:v1 - name and tag
+docker stop — stop container
+docker stop my_cont - 1 container
+docker stop $(docker ps -a -q) - all container
 
-docker tag oless:v1 oless:copy - create copy whit another TAG 
+docker kill — kill process container
+docker kill $(ps -a -q) - kill process all container
+
+docker rm — delete container
+
+docker rmi — delete images (after stopping all connected containers)
+
+
 
