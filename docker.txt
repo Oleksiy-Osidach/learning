@@ -27,4 +27,15 @@ docker rm — delete container
 docker rmi — delete images (after stopping all connected containers)
 
 
+--------
+
+docker container prune - delete all not run container
+
+----------------
+Dockerfiles  - for Docker app instruction for make images (only name "Dockerfile")
+	1 FROM node  (base images, if not look local, docker install from https://hub.docker.com/)
+	2 COPY . . (testfile.txt c:\\)(first "."" - local folder, second "." local folder create images)
+	3 EXPOSE 3000 (potr)
+	4 CMD ["node","app.js"] ()
+
 
