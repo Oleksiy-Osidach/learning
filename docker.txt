@@ -41,6 +41,9 @@ docker run -d -p 80:3000 13f5  - -d detached - not block terminal.
 
 docker run -d -p 80:3000 --name logsapp 13f5 - "--name logsapp" - name of the container (default - automatic name)
 
+ docker run -d -p 3000:3000 -- name logsapp --rm 60ee - "--rm - after stopping the container will be deleted"
+
+
 -------------------------- 
 Dockerfiles  - for Docker app instruction for make images (only name "Dockerfile")
 
@@ -48,19 +51,46 @@ Dockerfiles  - for Docker app instruction for make images (only name "Dockerfile
 
 	WORKDIR /app
 
-	COPY package.json /app - add in cach, 
+	COPY package.json /app  - add in cach, 
 
 	RUN npm install
 
 	COPY . . (testfile.txt c:\\)(first "."" - local folder, second "." local folder create images)
 
-	EXPOSE 3000 (potr)
+	ENV PORT 4200
+
+	EXPOSE $PORT
+
+	VOLUME ["/app/data"] - save data when deleting container
 
 	CMD  ["node", "app.js"]
-----------------------------
+
+	
 
 docker attach id - connected to container in console
 
 docker logs id - shows what happened in the container 
+
+docker build -t logsapp . - "-t logsapp - name images"
+
+
+________________________________________
+
+docker login - conect to your accaunt on docker hub
+
+docker push oleksiyosidach/logsapp:latest - (push images on docker hub)
+
+docker pull oleksiyosidach/logsapp:latest - (push images on docker hub)
+
+docker image inspect logsapp - description image
+
+
+docker run -d -p 3000:3000 -v logs:/app/data --rm --name logsapp logsapp:volumes
+-v logs:/app/data - save data, name volume "logs:"
+
+docker volume prune, rm, inspect, create, ls
+
+
+
 
 
