@@ -80,7 +80,7 @@ docker login - conect to your accaunt on docker hub
 
 docker push oleksiyosidach/logsapp:latest - (push images on docker hub)
 
-docker pull oleksiyosidach/logsapp:latest - (push images on docker hub)
+docker pull oleksiyosidach/logsapp:latest - (pull images on docker hub)
 
 docker image inspect logsapp - description image
 

@@ -1,4 +1,5 @@
-
+apt - ubuntu package manager, alias apt-get, for readhat - yum
+winget - package manager for windows, chockolate
 _______________________________________________
 
 --------------- Simple command Linux ----------
@@ -16,3 +17,32 @@ touch - create empty file, update date of last edit file
 touch file.name
 
 history
+___________________________________________________
+
+
+pwd - show absolute path
+
+cd (change directory) 
+  .. - one folder up
+  - previous folder
+  /user - internal folder
+  /user/home/my - absolute path any folder
+
+
+ls list files and folders
+    -l shows file or directory, size, modified date and time, file or folder name and owner of the file, and its permission.
+    -a show all files, hiden too
+    -lh, -F, -r, -R, -ltr, -lS, -i, --version, -l, -n
+
+cp copy files or directory
+	cp test.a home - copy file test.a in subdirectory home
+	cp test.a test.b /home/usr/test/ - copy files in absolute path
+	cp *.a home - all files .a
+	cp home /home/usr/test/ - copy dir home to /home/usr/test/ 
+	cp -f test.a bak - force copy
+	cp -u * home - copy only new files
+	
+
+
+
+
