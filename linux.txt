@@ -20,7 +20,8 @@ history
 ___________________________________________________
 
 
-pwd - show absolute path
+pwd - print name of current/working directory
+	-L, -P,
 
 cd (change directory) 
   .. - one folder up
@@ -41,6 +42,40 @@ cp copy files or directory
 	cp home /home/usr/test/ - copy dir home to /home/usr/test/ 
 	cp -f test.a bak - force copy
 	cp -u * home - copy only new files
+
+w - Show who is logged on and what they are doing.
+	-h - whithout the header
+	-u - no-current
+	-s - short
+	-i - ip-addr
+	user - show only select user information
+	-o, -V, -f
+
+whoami - print your user name
+
+mv - move directory/files
+	file /home - move file to directory /home
+	file file1 - rename file to file1
+	file1 file2 dir1 - mome 1,2 to dir1
+	mv *.pdf ~/home - move all file .pdf to /home
+	-f - rewrite file only read (0400)
+	-n - not rewrite file if her exist
+	-v, -b,
+
+unlink - delete one files
+
+rm - delete directory/files
+	file1 file2 - delete few files
+	*.pdf
+	-i - confirmation delete
+	-f - force delete
+	
+
+	
+
+
+
+
 	
 
 
