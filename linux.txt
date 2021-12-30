@@ -20,20 +20,20 @@ history
 ___________________________________________________
 
 
-pwd - print name of current/working directory
-	-L, -P,
-
 cd (change directory) 
   .. - one folder up
   - previous folder
   /user - internal folder
   /user/home/my - absolute path any folder
 
+pwd - print name of current/working directory
+	-L, -P,
 
 ls list files and folders
     -l shows file or directory, size, modified date and time, file or folder name and owner of the file, and its permission.
     -a show all files, hiden too
     -lh, -F, -r, -R, -ltr, -lS, -i, --version, -l, -n
+
 
 cp copy files or directory
 	cp test.a home - copy file test.a in subdirectory home
@@ -42,6 +42,18 @@ cp copy files or directory
 	cp home /home/usr/test/ - copy dir home to /home/usr/test/ 
 	cp -f test.a bak - force copy
 	cp -u * home - copy only new files
+
+find
+	-P - dont show symlink
+	-L - gets info from symlink
+	-maxdepth - max depth search on dir
+	-depth - first search in current dir, second - subdir
+	-mount - only current file system
+	-print - show full name
+	-type f - search only files
+	-type d - search only dir
+	-name, -perm, -user, -group, -mtime, -atime, -nogroup, -nouser, -newer, -size 
+
 
 w - Show who is logged on and what they are doing.
 	-h - whithout the header
@@ -69,7 +81,39 @@ rm - delete directory/files
 	*.pdf
 	-i - confirmation delete
 	-f - force delete
+
+VIM
+	vim text.txt
+	vim text1.txt text2.txt
+	:w - save
+	:q - close
+	:wq - save and close
+	:q! - dont save and close
+
+read text files
+	cat text.txt - simple text
+	nl text.txt - numbers lines
+	less text.txt - page view, after q - clear terminal [w-next,z-prev,/-search,q-quit]
+	more text.txt - page view, leaves text in terminal 
+	head - first 10 lines
+	tail - last 10 lines
+
 	
+hard link
+ 	ls myfile.txt hardlink
+ 	another link to the file, only file (not dir), link and file = inode
+ 
+soft link, sym-link
+	ln -s /home/usr/file.txt symlink
+	link on the file or dir, only path to file, individual CMOD, 
+
+
+	
+
+
+
+
+
 
 	
 
