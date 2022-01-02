@@ -100,12 +100,24 @@ read text files
 
 	
 hard link
- 	ls myfile.txt hardlink
+ 	ln myfile.txt hardlink
  	another link to the file, only file (not dir), link and file = inode
  
 soft link, sym-link
 	ln -s /home/usr/file.txt symlink
 	link on the file or dir, only path to file, individual CMOD, 
+
+
+______________________________________________
+
+Setup proper PS1 in BASH
+
+ PS1="\e[0;32m[\u@\w]\$ \e[m:  " - \u -user,\t - time, \w - current dir, 0;32 - green color
+
+ PS1 - change in file vi .bashrc 
+________________________________________________
+
+File System in Linux
 
 
 	
