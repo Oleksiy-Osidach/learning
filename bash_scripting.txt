@@ -1,0 +1,46 @@
+001 
+	creates a folder exercise_1 in folder /home/oless/scripts
+	create a file inside exercise_1 with name greating.txt with content “Hello world”
+
+	#!/bin/bash
+    
+    echo "creating folder exercise_1..."
+    mkdir -p -v exercise_1
+    echo "folder exercise_1 is created"
+
+    echo "create a file content “Hello world”"
+    echo "Hello world" > exercise_1/greating.txt
+    echo "resaults are saved in  exercise_1/greating.txt"
+_______________________________________________________________________________________
+
+
+002
+	creates a folder exercise_2 in folder /home/oless/scripts
+	creates a file inside exercise_2 with name greating.txt with a list of all folders and files located in root folder
+
+	#!/bin/bash
+    
+    echo "creating folder exercise_2..."
+    mkdir -p -v exercise_2
+    echo "folder exercise_2 is created"
+    
+    echo "list of all folders and files located in root folder"
+    ls -al / > exercise_2/greating.txt
+    echo "resaults are saved in  exercise_2/greating.txt"
+______________________________________________________________________________________
+
+003
+
+	creates a folder exercise_3 in folder /home/oless/scripts
+	creates a file inside exercise_3 with name find_results.txt with a list of all files *ubuntu* which can be found in folder
+
+
+	#!/bin/bash
+
+	echo "creating folder exercise_3..."
+	mkdir -p exercise_3
+	echo "folder exercise_3 is created"
+
+	echo "doing search of ubuntu files in /etc/"
+	find /etc/ -type f -name "ubuntu" 2>/dev/null > exercise_3/find_results.txt
+	echo "resaults are saved in  exercise_3/find_results.txt"
