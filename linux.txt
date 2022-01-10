@@ -112,26 +112,59 @@ soft link, sym-link
 ________________________________________________
 
 
-File System in Linux
-	Directories
-		/bin - is the dir of the applications and programs
-		/boot - files need for starting your system
-		/dev device files, if connect new device - will automagically pop up here.
-		/etc - name system, users and pass, the name of comp on network, config programm start
-		/home - users personal directories
-		/lib - libraries for program and system
-		/media - external storage will be automatically mounted when you plug
-		/mnt - temporary mount other file system
-		/opt - 
-		/proc
-		/root 
-		/run
-		/sbin
-		/usr 
-		/srv
-		/sys
-		/tmp
-		/var
+
+Directories
+/bin - is the dir of the applications and programs
+/boot - files need for starting your system
+/dev device files, if connect new device - will automagically pop up here.
+/etc - name system, users and pass, the name of comp on network, config programm start
+/home - users personal directories
+/usr install packed progamm
+
+/var log, cashe, mai files
+
+ 
+Ext2
+Individual file size: 16GB to 2TB
+Volume file system size: 4TB to 32TB
+Maximum filename length: 255 bytes (characters)
+Maximum number of files: 10^18
+
+Ext3
+Individual file size: 16GB to 2TB
+Volume file system size: 4TB to 32TB
+Maximum filename length: 255 bytes (characters)
+Maximum number of files: variable
+Filenames: Supports almost all characters except NULL('\0') and '/' 
+Three types of journaling available: Journal, Ordered, and Writeback
+File system conversion: converts Ext2 to Ext3 file without backup and restore
+Time Stamp: Second
+Pre-allocation: In-core reservation
+Multiple Block Allocation: basic
+
+Ext4
+Individual file size: 16GB to 16TB
+Volume file system size: 4TB to 1EB
+Maximum filename length: 255 bytes (characters)
+Maximum number of files: 4 billion
+Filenames: Supports almost all characters except NULL('\0') and '/' 
+File system conversion: An Ext3 file system can be converted to Ext4
+Advanced features: Extents, Directory Indexing, Delayed Allocation, and Defragmentation
+Subdirectory: Unlimited
+Time Stamp: Nanosecond
+Pre-allocation: for extent files
+Multiple Block Allocation: advanced
+
+
+JFS;
+
+ReiserFS;
+
+XFS;
+
+Btrfs;
+
+ZFS.
 
 
 
