@@ -120,17 +120,16 @@ Directories
 /etc - name system, users and pass, the name of comp on network, config programm start
 /home - users personal directories
 /usr install packed progamm
-
 /var log, cashe, mai files
 
  
-Ext2
+Ext2 Extended Filesystem 2
 Individual file size: 16GB to 2TB
 Volume file system size: 4TB to 32TB
 Maximum filename length: 255 bytes (characters)
 Maximum number of files: 10^18
 
-Ext3
+Ext3 Extended Filesystem 3
 Individual file size: 16GB to 2TB
 Volume file system size: 4TB to 32TB
 Maximum filename length: 255 bytes (characters)
@@ -142,7 +141,7 @@ Time Stamp: Second
 Pre-allocation: In-core reservation
 Multiple Block Allocation: basic
 
-Ext4
+Ext4 Extended Filesystem 4
 Individual file size: 16GB to 16TB
 Volume file system size: 4TB to 1EB
 Maximum filename length: 255 bytes (characters)
@@ -156,15 +155,16 @@ Pre-allocation: for extent files
 Multiple Block Allocation: advanced
 
 
-JFS;
+JFS Journaled File System
+
 
 ReiserFS;
 
 XFS;
 
-Btrfs;
+Btrfs B-Tree File System
 
-ZFS.
+
 
 
 
