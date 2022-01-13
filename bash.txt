@@ -32,3 +32,16 @@ BASH:
 /etc/profile
 	~/.profile
 	~/.bashrc
+
+________________________________________
+Sha-bang
+#!/bin/sh
+#!/bin/bash
+#!/usr/bin/perl
+#!/usr/bin/tcl
+#!/bin/sed -f
+#!/usr/awk -f
+
+
+after  change chmod file - ./scriptname - start script
+
