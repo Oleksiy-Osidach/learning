@@ -6,7 +6,6 @@ ___________________
 4. AWS Iot 250 000 messeages
 5. Amazon EC2 Container Registry 500MB-month
 
-
 IAM  Identity and Access Management
 ____________________
 AWS Identity and Access Management (IAM) provides fine-grained access control across all of AWS. 
