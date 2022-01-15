@@ -27,8 +27,6 @@ IAM make three sections
 2. Groups and Policies -  create, change, delete group assign permissions this group. Is needed not to notify each user separately if there are similar.
 3. Roles - This section provides permissions to access AWS services to other AWS services. For example, the program access to the Data Base, or to the storage basket
 
-
-
 VPC  Virtual Private Cloud
 ____________________________
  (Amazon VPC) enables you to launch AWS resources into a virtual network
