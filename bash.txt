@@ -45,3 +45,22 @@ Sha-bang
 
 after  change chmod file - ./scriptname - start script
 
+____________________________________________________________________________
+
+STDERR, STDOUT, STDIN
+
+All programs have 3 flow data
+ 
+
+stdin: Stands for standard input. It takes text as input.
+$ ls
+bin incoming pub usr
+ 
+
+stdout: Stands for standard output. 
+$ echo '<?php echo «Hello world»; ?>' | php
+Hello world
+ 
+stderr: Stands for standard error. 
+$ rm example.txt
+rm: example.txt: No such file or directory
