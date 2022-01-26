@@ -164,6 +164,31 @@ XFS;
 
 Btrfs B-Tree File System
 
+____________________________________
+cat - concatenate (об”єднання)
+
+cat > test.txt (create and enter symbol in file) CTRL+D - exit
+
+cat test.txt (see file text)
+
+cat test.txt | more ( pages look)
+
+cat *.sh (open all file .sh)
+
+cat 1.txt > 2.txt - (if not exist 2.txt cat create him and copy text whit 1.txt)
+
+cat 1.txt >> 2.txt (add text from 1.txt to 2.txt)
+
+cat 1.txt 2.txt > 3.txt (1+2=3) 
+
+cat -n 1.txt (numerical line)
+
+cat -b 1.txt (numerical not null line)
+
+cat -s 1.txt (del null line)
+
+tac 1.txt (file end to start)
+
 
 
 
