@@ -189,6 +189,82 @@ cat -s 1.txt (del null line)
 
 tac 1.txt (file end to start)
 
+__________________________________
+grep [option] what_look [file]
+
+-i not sensitive to registration
+-c show only quantity lines
+-n show number search request
+-v show line where dont find
+
+grep whatlook file | grep whatlook2 file
+__________________________________________
+find - show all files and dir in this dir
+find . -type d - only dir
+find . -type f - only files
+find /home/oless all files and dir in this dir
+find /root -name "1.txt" (*.txt)
+find /root -iname "1.txt" (not sensitive to registration)
+find /root -not -name "*.txt" (all not *.txt files)
+find -name "*.txt" -o -name "1.*" (or)
+find /root -type f -perm 0777
+find . -user oless (all files oless)
+$ find / -size -2M (size file)
+$ find / -size +2M -size -5M (2m to 5m)
+find / -mtime 8 (file which change 8day ago)
+find / -type f(d) -empty (all empty files or dir)
+find / -type f -name '1.*' -exec rm -f {} \; (seek 1.* files adn delete him)
+_______________________________________
+
+head options file (show 10 first lines)
+-c, --byte	
+-n, --lines	
+:-q, 	 not print headers
+-v, will  output the header/filename.
+-z, changes the line delimiter
+
+_______________________________________
+
+tail  options file (show 10 end lines)
+-c, --byte	
+-(+)n, --lines	
+:-q, 	 not print headers
+-v, will  output the header/filename.
+_________________________________________
+
+more - utilites list text on 1 page
+
+ more /etc/passwd
+
+[Space] - scrolls the display, one screenful of data at a time
+[Enter] - scrolls the display one line
+[b] - scrolls the display backwards one screenful of data
+[/] - lets you search the text, just like you would in the vi/vim editor
+
+ps auxwww | more  - use "more" whith another command
+
+__________________________________________
+
+less - how command "more" but many options
+
+less /usr/share/common-licenses/GPL-3
+
+Down arrow, Enter, e, or j	Move forward one line.
+Up arrow,y or k	Move backward one line.
+Space bar or f	Move Forward one page.
+b	Move Backward one page.
+/pattern	Search forward for matching patterns.
+?pattern	Search backward for matching patterns.
+n	Repeat previous search.
+N	Repeat previous search in reverse direction.
+g	Go to the first line in the file.
+Ng	Go to the N-th line in the file.
+G	Go to the last line in the file.
+p	Go to the beginning of fthe ile.
+Np	Go to N percent into file.
+h	Display help.
+q	Exit less.
+
 
 
 
